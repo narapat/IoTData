@@ -6,4 +6,4 @@
 302101-001,Nakhon Ratchasima
 940110-001,Pattani
 960900-001,Narathiwat
-770403-001,Pra
+770403-001,Prachuap Khiri Khan
