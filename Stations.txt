@@ -1,7 +1,6 @@
 100704-001,Bangkok
 100200-001,Bangkok
 500513-001,Chiangmai
-530100-001,Uttaradit
 302101-001,Nakhon Ratchasima
 940110-001,Pattani
 960900-001,Narathiwat
