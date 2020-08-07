@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:DataServices m:DataServiceVersion="1.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+        <Schema Namespace="sapbyd" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="RPHCMPAB01_Q1001QueryResult" sap:semantics="aggregate" sap:label="Complete Employee Overview: Key date" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="C1K75IUHTU4VEQI131YHETB2135" Type="Edm.String" Nullable="true" MaxLength="255" sap:label="E-Mail ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="C1ORG_CENTRE_UUIDsORGCNTRID" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Org Unit ID ID" sap:aggregation-role="dimension" sap:filterable="true" sap:text="T1ORG_CENTRE_UUIDsORGCNTRID"/>
+                <Property Name="C1QVPHDVC0Z9OKU9SO48R72SN8X" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Organizational Center ID ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="C1RLU_UUIDsRLU_ID" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Reporting Line Unit ID ID" sap:aggregation-role="dimension" sap:filterable="true" sap:text="T1RLU_UUIDsRLU_ID"/>
+                <Property Name="CADJ_SVC_DATE" Type="Edm.DateTime" Nullable="true" sap:label="Service Start Date ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CADMIN_CATEGORY" Type="Edm.String" Nullable="true" MaxLength="2" sap:label="Administrative Category ID" sap:aggregation-role="dimension" sap:filterable="true" sap:super-ordinate="CET_COUNTRY" sap:text="TADMIN_CATEGORY"/>
+                <Property Name="CCCENTER_END_DATE" Type="Edm.DateTime" Nullable="true" sap:label="Cost Center Valid To ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CCCENTER_MANAGER" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Cost Center Manager ID" sap:aggregation-role="dimension" sap:filterable="true" sap:filter-restriction="multi-value" sap:text="TCCENTER_MANAGER"/>
+                <Property Name="CCCENTER_MANAGER_END_DATE" Type="Edm.DateTime" Nullable="true" sap:label="Cost Center Manager Valid To ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CCCENTER_MANAGER_START_DATE" Type="Edm.DateTime" Nullable="true" sap:label="Cost Center Manager Valid From ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CCCENTER_START_DATE" Type="Edm.DateTime" Nullable="true" sap:label="Cost Center Valid From ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CCCENTER_UUID" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Cost Center ID" sap:aggregation-role="dimension" sap:filterable="true" sap:filter-restriction="multi-value" sap:text="TCCENTER_UUID"/>
+                <Property Name="CCOMPANY_UUID" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Company ID" sap:aggregation-role="dimension" sap:filterable="true" sap:filter-restriction="multi-value" sap:text="TCOMPANY_UUID"/>
+                <Property Name="CCOMPETITION_IND" Type="Edm.Boolean" Nullable="true" sap:label="Competition Clause Effective ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CEE_GENDER" Type="Edm.String" Nullable="true" MaxLength="1" sap:label="Gender ID" sap:aggregation-role="dimension" sap:filterable="true" sap:text="TEE_GENDER"/>
+                <Property Name="CEE_MARITAL_STAT" Type="Edm.String" Nullable="true" MaxLength="1" sap:label="Marital Status ID" sap:aggregation-role="dimension" sap:filterable="true" sap:text="TEE_MARITAL_STAT"/>
+                <Property Name="CEE_NATIONALITY" Type="Edm.String" Nullable="true" MaxLength="3" sap:label="Nationality ID" sap:aggregation-role="dimension" sap:filterable="true" sap:text="TEE_NATIONALITY"/>
+                <Property Name="CEE_PRIV_MAIL" Type="Edm.String" Nullable="true" MaxLength="255" sap:label="Private E-Mail ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CEE_PRIV_MOBILE" Type="Edm.String" Nullable="true" sap:label="Private Mobile ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CEE_PRIV_PHONE" Type="Edm.String" Nullable="true" sap:label="Private Phone ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CEMPLOYEE_UUID" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Employee ID" sap:aggregation-role="dimension" sap:filterable="true" sap:filter-restriction="multi-value" sap:text="TEMPLOYEE_UUID"/>
+                <Property Name="CET_COUNTRY" Type="Edm.String" Nullable="true" MaxLength="3" sap:label="Country ID" sap:aggregation-role="dimension" sap:filterable="true" sap:text="TET_COUNTRY"/>
+                <Property Name="CJOB_UUID" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Job ID" sap:aggregation-role="dimension" sap:filterable="true" sap:filter-restriction="multi-value" sap:text="TJOB_UUID"/>
+                <Property Name="CNOTICE_PERIOD" Type="Edm.String" Nullable="true" MaxLength="2" sap:label="Notice Period ID" sap:aggregation-role="dimension" sap:filterable="true" sap:text="TNOTICE_PERIOD"/>
+                <Property Name="CORG_CENTRE_UUID" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Org Unit ID" sap:aggregation-role="dimension" sap:filterable="true" sap:filter-restriction="multi-value" sap:text="TORG_CENTRE_UUID"/>
+                <Property Name="CPROB_PERIOD_UNIT" Type="Edm.String" Nullable="true" MaxLength="3" sap:label="Assessment Unit ID" sap:aggregation-role="dimension" sap:filterable="true" sap:text="TPROB_PERIOD_UNIT"/>
+                <Property Name="CREINSTATEMENT_IND" Type="Edm.Boolean" Nullable="true" sap:label="Reinstatement ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CRLU_END_DATE" Type="Edm.DateTime" Nullable="true" sap:label="RLU Valid To ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CRLU_MANAGER" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="RLU Manager ID" sap:aggregation-role="dimension" sap:filterable="true" sap:filter-restriction="multi-value" sap:text="TRLU_MANAGER"/>
+                <Property Name="CRLU_MANAGER_END_DATE" Type="Edm.DateTime" Nullable="true" sap:label="RLU Manager Valid To ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CRLU_MANAGER_START_DATE" Type="Edm.DateTime" Nullable="true" sap:label="RLU Manager Valid From ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CRLU_START_DATE" Type="Edm.DateTime" Nullable="true" sap:label="RLU Valid From ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CRLU_UUID" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Reporting Line Unit ID" sap:aggregation-role="dimension" sap:filterable="true" sap:filter-restriction="multi-value" sap:text="TRLU_UUID"/>
+                <Property Name="CSIDELINE_IND" Type="Edm.Boolean" Nullable="true" sap:label="Sideline Job Allowed ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CVALIDITY_PERIOD_END_DATE_REG" Type="Edm.DateTime" Nullable="true" sap:label="Employment Regulatory Compliance Valid To ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CVALIDITY_PERIOD_START_DATE_REG" Type="Edm.DateTime" Nullable="true" sap:label="Employment Regulatory Compliance Valid From ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CWA_END_DATE" Type="Edm.DateTime" Nullable="true" sap:label="Termination Date ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CWA_START_DATE" Type="Edm.DateTime" Nullable="true" sap:label="Hire Date ID" sap:aggregation-role="dimension" sap:filterable="true"/>
+                <Property Name="CWA_TYPE" Type="Edm.String" Nullable="true" MaxLength="4" sap:label="Work Agreement Type ID" sap:aggregation-role="dimension" sap:filterable="true" sap:text="TWA_TYPE"/>
+                <Property Name="CWORKTIME_UNIT" Type="Edm.String" Nullable="true" MaxLength="3" sap:label="Working Time Unit ID" sap:aggregation-role="dimension" sap:filterable="true" sap:text="TWORKTIME_UNIT"/>
+                <Property Name="FCCOUNT" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Counter Formatted"/>
+                <Property Name="FCPROB_PERIOD" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Assessment Period Formatted"/>
+                <Property Name="FCWORKTIME_RATE" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Agreed Working Time Formatted"/>
+                <Property Name="KCCOUNT" Type="Edm.Int32" Nullable="true" sap:label="Counter" sap:filterable="true" sap:text="FCCOUNT" sap:aggregation-role="measure"/>
+                <Property Name="KCPROB_PERIOD" Type="Edm.Decimal" Nullable="true" Precision="31" Scale="14" sap:label="Assessment Period" sap:filterable="true" sap:text="FCPROB_PERIOD" sap:aggregation-role="measure" sap:unit="UCPROB_PERIOD"/>
+                <Property Name="KCWORKTIME_RATE" Type="Edm.Decimal" Nullable="true" Precision="28" Scale="6" sap:label="Agreed Working Time" sap:filterable="true" sap:text="FCWORKTIME_RATE" sap:aggregation-role="measure" sap:unit="UCWORKTIME_RATE"/>
+                <Property Name="T1ORG_CENTRE_UUIDsORGCNTRID" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Org Unit ID Text"/>
+                <Property Name="T1RLU_UUIDsRLU_ID" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Reporting Line Unit ID Text"/>
+                <Property Name="TADMIN_CATEGORY" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Administrative Category Text"/>
+                <Property Name="TCCENTER_MANAGER" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Cost Center Manager Text"/>
+                <Property Name="TCCENTER_UUID" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Cost Center Text"/>
+                <Property Name="TCOMPANY_UUID" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Company Text"/>
+                <Property Name="TEE_GENDER" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Gender Text"/>
+                <Property Name="TEE_MARITAL_STAT" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Marital Status Text"/>
+                <Property Name="TEE_NATIONALITY" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Nationality Text"/>
+                <Property Name="TEMPLOYEE_UUID" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Employee Text"/>
+                <Property Name="TET_COUNTRY" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Country Text"/>
+                <Property Name="TJOB_UUID" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Job Text"/>
+                <Property Name="TNOTICE_PERIOD" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Notice Period Text"/>
+                <Property Name="TORG_CENTRE_UUID" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Org Unit Text"/>
+                <Property Name="TPROB_PERIOD_UNIT" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Assessment Unit Text"/>
+                <Property Name="TRLU_MANAGER" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="RLU Manager Text"/>
+                <Property Name="TRLU_UUID" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Reporting Line Unit Text"/>
+                <Property Name="TWA_TYPE" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Work Agreement Type Text"/>
+                <Property Name="TWORKTIME_UNIT" Type="Edm.String" Nullable="true" MaxLength="60" sap:label="Working Time Unit Text"/>
+                <Property Name="UCPROB_PERIOD" Type="Edm.String" Nullable="true" MaxLength="3" sap:label="Assessment Period Unit" sap:semantics="unit-of-measure"/>
+                <Property Name="UCWORKTIME_RATE" Type="Edm.String" Nullable="true" MaxLength="3" sap:label="Agreed Working Time Unit" sap:semantics="unit-of-measure"/>
+                <Property Name="PARA_KEYDATE" Type="Edm.DateTime" Nullable="false" sap:label="Key Date" sap:filterable="true" sap:mandatory="true" sap:selection-type="any" sap:selection="true"/>
+                <Property Name="PARA_COMPANY" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Company" sap:filterable="true" sap:selection-type="any" sap:selection="true"/>
+                <Property Name="PARA_EMPLOYEE" Type="Edm.String" Nullable="true" MaxLength="20" sap:label="Employee" sap:filterable="true" sap:selection-type="any" sap:selection="true"/>
+                <Property Name="TotaledProperties" Type="Edm.String" sap:aggregation-role="totaled-properties-list"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false"/>
+            </EntityType>
+            <EntityContainer Name="ana_businessanalytics_analytics" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="RPHCMPAB01_Q1001QueryResults" EntityType="sapbyd.RPHCMPAB01_Q1001QueryResult" sap:creatable="false" sap:deletable="false" sap:updatable="false" sap:searchable="false" sap:is-thing-type="false" sap:semantics="aggregate" sap:label="Complete Employee Overview: Key date" xmlns:sap="http://www.sap.com/Protocols/SAPData"/>
+                <FunctionImport Name="Logoff" ReturnType="Edm.String" m:HttpMethod="POST"/>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
